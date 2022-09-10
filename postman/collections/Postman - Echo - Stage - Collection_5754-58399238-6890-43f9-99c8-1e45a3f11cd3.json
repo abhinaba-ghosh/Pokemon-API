@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "58399238-6890-43f9-99c8-1e45a3f11cd3",
+		"name": "Postman - Echo - Stage - Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "5754-58399238-6890-43f9-99c8-1e45a3f11cd3"
+	},
+	"item": [
+		{
+			"name": "Postman - Echo 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 60ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(60);",
+							"});"
+						],
+						"type": "text/javascript",
+						"id": "6fd15e69-6c91-424d-a807-48124f74a9b8"
+					}
+				}
+			],
+			"id": "81be6502-b9b8-4e8b-829c-b15e0897f30d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman - Echo 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 50ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(50);",
+							"});"
+						],
+						"type": "text/javascript",
+						"id": "dedd3cb8-7e77-4a98-b2a8-7ccad40351f5"
+					}
+				}
+			],
+			"id": "425c43a4-34f5-4af2-9da6-e713e83423ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
