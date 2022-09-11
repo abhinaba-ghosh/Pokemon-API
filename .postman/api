@@ -39,9 +39,6 @@ files[] = {"id":"fd6684a6-e591-46ec-8580-12333b00688a","path":"Postman - Echo - 
 
 [relations.apiDefinition]
 rootDirectory = postman
-files[] = {"path":"abc.json","metaData":{}}
-files[] = {"path":"schemas/index.json","metaData":{}}
-files[] = {"path":"schemas/index.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
